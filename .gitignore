@@ -2,6 +2,7 @@
 /airflow/*
 !/airflow/dags
 !/airflow/src
+!/airflow/data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
