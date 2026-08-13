@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.sdk import task,dag,TriggerRule
 from datetime import datetime,timedelta
-from src.process_car_data import read_cvs_file,write_csv_result,determine_branch,filter_fwds,filter_two_seaters
+from src.procses_car_data_dependencies import read_cvs_file,write_csv_result,determine_branch,filter_fwds,filter_two_seaters
 
 default_args = {
     'owner': 'jrodo',
