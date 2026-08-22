@@ -8,8 +8,8 @@ def insert_laptop_data():
     conn = psycopg2.connect(
         host="localhost",
         database="laptop_db",
-        user="jrodo",
-        password="accelworld12"
+        user=os.getenv('DB_USER'),
+        password=os.getenv('DB_PASSWORD')
     )
     cur = conn.cursor()
 
