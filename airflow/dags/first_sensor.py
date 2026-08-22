@@ -21,6 +21,6 @@ def sensor_file():
                                filepath='tmp/laptops.csv',
                                poke_interval=10,
                                timeout= 60 * 10,
-                               mode='poke')
+                               mode='reschedule')
 
 sensor_file()
